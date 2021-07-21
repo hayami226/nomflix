@@ -11,7 +11,7 @@ export default class extends React.Component {
     }
 
     render() {
-        const { movieResults, tvResults, searchTerm, error, loading} = thie.state;
+        const { movieResults, tvResults, searchTerm, error, loading} = this.state;
         return (
             <SearchPresenter 
                 movieResults={movieResults}

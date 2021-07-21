@@ -7,7 +7,7 @@ export default class extends React.Component {
         popuar: null,
         airingToday: null,
         error: null,
-        loading: false
+        loading: true
     }
 
     render() {

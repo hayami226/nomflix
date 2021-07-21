@@ -5,7 +5,7 @@ export default class extends React.Component {
     state = {
         result: null,
         error: null,
-        loading: false
+        loading: true
     };
 
     render() {
