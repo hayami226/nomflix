@@ -17,7 +17,7 @@ export const moviesApi = {
             append_to_response: "videos" // 예고편 정보 가져옴
         }
     }),
-    searcn: (term) => api.get("search/movie", {
+    search: (term) => api.get("search/movie", {
         params: {
             query: encodeURIComponent(term) // 인코딩(&lt; 등)
         }
@@ -33,7 +33,7 @@ export const moviesApi = {
             append_to_response: "videos" // 예고편 정보 가져옴
         }
     }),
-    searcn: (term) => api.get("search/tv", {
+    search: (term) => api.get("search/tv", {
         params: {
             query: encodeURIComponent(term) // 인코딩(&lt; 등)
         }
