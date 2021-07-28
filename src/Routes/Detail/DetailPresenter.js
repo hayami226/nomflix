@@ -66,6 +66,18 @@ const Overview = styled.p`
   opacity: 0.7;
   line-height: 1.5;
   width: 50%;
+  margin-bottom: 20px;
+`;
+
+const ALink = styled.a`
+  margin-bottom: 10px;
+  text-decoration: underline;
+  display: block;
+`;
+
+const Detail = styled.div`
+  margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 const DetailPresenter = ({ result, loading, error }) =>
@@ -122,6 +134,10 @@ const DetailPresenter = ({ result, loading, error }) =>
             </Item>
           </ItemContainer>
           <Overview>{result.overview}</Overview>
+          <ALink href={`https://www.imdb.com/title/${result.imdb_id}`}>IMDB Link</ALink>
+          <ALink href={`https://www.youtube.com/results?search_query=${result.original_title ? result.original_title : result.original_name}`}>YT Videos</ALink>
+          <Detail>{result.production_companies.map((company, index) => index === result.production_companies.length - 1 ? company.name : `${company.name} / ` )}</Detail>
+          <Detail>{result.production_countries.map((contry, index) => index == result.production_countries.length - 1 ? contry.name : `${contry.name} / `)}</Detail>
         </Data>        
       </Content>
     </Container>

@@ -22,8 +22,12 @@ Learning React and ES6 by building a Movie Discovery App.
 
 ## Code Challenges
 
-- [ ] IMDB Link
-- [ ] Tabs inside of Movie / Show Details (YT Videos, Production Company & Countries)
+- [x] IMDB Link
+- [x] Tabs inside of Movie / Show Details (YT Videos, Production Company & Countries)
 - [ ] Collections Link
 - [ ] /collections Route
 - [ ] On TV Show, show seasons and creators
+
+## Movie DataBase Api Doc
+
+- https://developers.themoviedb.org/3/authentication/how-do-i-generate-a-session-id
