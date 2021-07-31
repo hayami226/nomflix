@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Helmet from "react-helmet";
 import Loader from "Components/Loader";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -69,10 +70,22 @@ const Overview = styled.p`
   margin-bottom: 20px;
 `;
 
+const LinkGroup = styled.div`
+  display: flex;
+  margin-top: 20px;
+`;
+
 const ALink = styled.a`
   margin-bottom: 10px;
-  text-decoration: underline;
-  display: block;
+  width: 145px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
 `;
 
 const Detail = styled.div`
@@ -80,7 +93,18 @@ const Detail = styled.div`
   font-weight: bold;
 `;
 
-const DetailPresenter = ({ result, loading, error }) =>
+const Coleections = styled.div`
+  border: 1px solid white;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+`;
+
+const DetailPresenter = ({ result, collections, loading, error }) =>
   loading ? (
     <>
       <Helmet>
@@ -134,10 +158,20 @@ const DetailPresenter = ({ result, loading, error }) =>
             </Item>
           </ItemContainer>
           <Overview>{result.overview}</Overview>
-          <ALink href={`https://www.imdb.com/title/${result.imdb_id}`}>IMDB Link</ALink>
-          <ALink href={`https://www.youtube.com/results?search_query=${result.original_title ? result.original_title : result.original_name}`}>YT Videos</ALink>
           <Detail>{result.production_companies.map((company, index) => index === result.production_companies.length - 1 ? company.name : `${company.name} / ` )}</Detail>
           <Detail>{result.production_countries.map((contry, index) => index == result.production_countries.length - 1 ? contry.name : `${contry.name} / `)}</Detail>
+          <LinkGroup>
+            <ALink href={`https://www.imdb.com/title/${result.imdb_id}`} target="_blank">IMDB Link</ALink>
+            <ALink href={`https://www.youtube.com/results?search_query=${result.original_title ? result.original_title : result.original_name}`} target="_blank">YT Videos</ALink>
+          </LinkGroup>
+          {result.belongs_to_collection ? (
+            <Link to={`/collections/${result.belongs_to_collection.id}`}>
+              <Coleections>
+                  View Collections
+              </Coleections>
+            </Link>
+            ) : <></>
+          }
         </Data>        
       </Content>
     </Container>

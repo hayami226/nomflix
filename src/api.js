@@ -39,3 +39,7 @@ export const moviesApi = {
         }
     })    
   };
+
+  export const collectionApi = {
+      collectionDetail: (id) => api.get(`collection/${id}`)
+  }
