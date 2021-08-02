@@ -87,12 +87,12 @@ const Collections = ( props ) => {
     `;    
 
     const Part = styled.div`
-        width: 30%;
+        width: 600px;
         background-image: url(${props => props.bgImage});
         background-position: center center;
         background-size: cover;
         border-radius: 5px;    
-        height: 500px;
+        height: 900px;
         margin-top: 20px;
     `;
 
