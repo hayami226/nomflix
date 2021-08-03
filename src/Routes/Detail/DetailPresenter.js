@@ -110,11 +110,10 @@ const SLink = styled(Link)`
   font-size: 12px;
   margin-top: 20px;
   display:inline-block;
-  margin-right: 5px;
-  padding: 20px 24px;
+  padding: 20px 25.5px;
   background-color: ${props => (props.active ? "white" : "black")};
   color: ${props => (props.active ? "black" : "white")};
-  font-weight: ${props => (props.active ? "bold" : "none")};
+  font-weight: ${props => (props.active ? "bold" : "")};
 `;
 
 const DetailPresenter = ({ result, loading, error, isMovie}) => {

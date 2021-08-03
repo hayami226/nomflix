@@ -21,7 +21,20 @@ const Videos = (props) => {
     return( 
         <Container>
             <ul>
-                <Detail>{result.videos.results.map((video, index) => <Item><a href={`https://www.youtube.com/watch?v=${video.key}` } target="_blank">{video.name}</a></Item>)}</Detail>
+            <Detail>
+                {result.videos.results.map((video, index) => 
+                    <Item>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src={`https://www.youtube.com/embed/${video.key}`} 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </Item>)}
+            </Detail>
             </ul>
         </Container>
     );

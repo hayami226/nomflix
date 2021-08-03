@@ -7,7 +7,8 @@ const Container = styled.div`
 `;
 
 const Detail = styled.div`
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
 `;
 
 const Item = styled.li`
