@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/hayami226/nomflix/static/js/main.09b942de.chunk.js",
-    "main.js.map": "/hayami226/nomflix/static/js/main.09b942de.chunk.js.map",
-    "runtime-main.js": "/hayami226/nomflix/static/js/runtime-main.2eca5477.js",
-    "runtime-main.js.map": "/hayami226/nomflix/static/js/runtime-main.2eca5477.js.map",
-    "static/js/2.d3775f8d.chunk.js": "/hayami226/nomflix/static/js/2.d3775f8d.chunk.js",
-    "static/js/2.d3775f8d.chunk.js.map": "/hayami226/nomflix/static/js/2.d3775f8d.chunk.js.map",
-    "index.html": "/hayami226/nomflix/index.html",
-    "static/js/2.d3775f8d.chunk.js.LICENSE.txt": "/hayami226/nomflix/static/js/2.d3775f8d.chunk.js.LICENSE.txt",
-    "static/media/noPosterSmall.png": "/hayami226/nomflix/static/media/noPosterSmall.ea2ad102.png"
+    "main.js": "/nomflix/static/js/main.09b942de.chunk.js",
+    "main.js.map": "/nomflix/static/js/main.09b942de.chunk.js.map",
+    "runtime-main.js": "/nomflix/static/js/runtime-main.d341a0da.js",
+    "runtime-main.js.map": "/nomflix/static/js/runtime-main.d341a0da.js.map",
+    "static/js/2.19139756.chunk.js": "/nomflix/static/js/2.19139756.chunk.js",
+    "static/js/2.19139756.chunk.js.map": "/nomflix/static/js/2.19139756.chunk.js.map",
+    "index.html": "/nomflix/index.html",
+    "static/js/2.19139756.chunk.js.LICENSE.txt": "/nomflix/static/js/2.19139756.chunk.js.LICENSE.txt",
+    "static/media/noPosterSmall.png": "/nomflix/static/media/noPosterSmall.ea2ad102.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2eca5477.js",
-    "static/js/2.d3775f8d.chunk.js",
+    "static/js/runtime-main.d341a0da.js",
+    "static/js/2.19139756.chunk.js",
     "static/js/main.09b942de.chunk.js"
   ]
 }
