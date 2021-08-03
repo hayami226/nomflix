@@ -31,3 +31,7 @@ Learning React and ES6 by building a Movie Discovery App.
 ## Movie DataBase Api Doc
 
 - https://developers.themoviedb.org/3/authentication/how-do-i-generate-a-session-id
+
+# Preview:
+
+Try it on [netlify](https://dazzling-hawking-6b0dac.netlify.app)
